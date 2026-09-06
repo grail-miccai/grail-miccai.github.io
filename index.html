@@ -10,6 +10,72 @@
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
+	<style>
+		#main table.program-agenda tbody tr.program-framework {
+			background-color: rgba(160, 174, 192, 0.2);
+		}
+
+		#main table.program-agenda tbody tr.program-chair {
+			background-color: rgba(72, 187, 120, 0.22);
+		}
+
+		#main table.program-agenda tbody tr.program-keynote {
+			background-color: rgba(237, 137, 54, 0.24);
+		}
+
+		#main table.program-agenda tbody tr.program-session {
+			background-color: rgba(66, 153, 225, 0.28);
+			font-weight: 600;
+		}
+
+		#main table.program-agenda tbody tr.program-oral {
+			background-color: rgba(66, 153, 225, 0.14);
+		}
+
+		.header-sponsors {
+			margin-top: 0.75em;
+			line-height: 1.4;
+		}
+
+		.header-sponsors img {
+			display: inline-block;
+			max-height: 32px;
+			max-width: 100px;
+			margin: 0.2em 0.6em 0.2em 0;
+			vertical-align: middle;
+			width: auto;
+		}
+
+		.header-sponsors img.sponsor-logo-nvidia {
+			max-height: 44px;
+			max-width: 160px;
+		}
+
+		.sponsor-logos {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			gap: 2em;
+			margin: 1.5em 0;
+		}
+
+		.sponsor-logos a {
+			display: inline-block;
+		}
+
+		.sponsor-logos img {
+			max-height: 72px;
+			max-width: 200px;
+			width: auto;
+		}
+
+		.sponsor-logos img.sponsor-logo-nvidia {
+			max-height: 96px;
+			max-width: 120px;
+		}
+	</style>
+
 	<script>
 		(function (i, s, o, g, r, a, m) {
 			i['GoogleAnalyticsObject'] = r;
@@ -49,6 +115,11 @@
 				<a href="https://conferences.miccai.org/2026/en/default.asp">
 					<img src="https://conferences.miccai.org/2026/files/images/layout/en/miccai2026-logo-france.png" alt="MICCAI 2026" width="40%">
 				</a>
+				<div class="header-sponsors">
+					Sponsored by:
+					<a href="https://mcml.ai/"><img src="https://mcml.ai/images/MCML_Logo_cropped.jpg" alt="Munich Center for Machine Learning (MCML)"></a>
+					<a href="https://www.nvidia.com/en-us/solutions/ai/"><img class="sponsor-logo-nvidia" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/NVIDIA_logo.svg/1920px-NVIDIA_logo.svg.png" alt="NVIDIA"></a>
+				</div>
 			</h3>
 
 			<!--
@@ -76,8 +147,8 @@
 				<!-- <li><a href="#bestpaper">Best Paper</a></li> -->
 				<li><a href="#dates">Important Dates</a></li>
 				<li><a href="#Organisers">Organising Committee</a></li>
+				<li><a href="#sponsors">Sponsors</a></li>
 				<li><a href="#past_events">Proceedings and Past Events</a></li>
-				<!-- <li><a href="#sponsors">Sponsor</a></li> -->
 			</ul>
 		</nav>
 
@@ -91,6 +162,7 @@
 					</header>
 
 					<ul>
+						<li><b>06.09.2026:</b> Final program published; keynote speakers Emma Robinson and Azade Farshad announced. Sponsors and awards: MCML (€500 cash) and NVIDIA (RTX 5070 GPU) for best paper and runner-up. See <a href="#program">Program</a>, <a href="#keynote">Keynotes</a>, and <a href="#sponsors">Sponsors</a>. Paper submission is closed.</li>
 						<li><b>31.07.2026:</b> Author notifications were delayed due to late reviews, emergency reviewer assignments, and meta-review completion. All meta-reviews are now in; we are making final decisions and expect to notify authors before end of day today, Fri July 31st (CEST).</li>
 						<li><b>22.07.2026:</b> Important dates updated (prospective): author notifications <b>July 28</b>. See the <a href="#dates">Important Dates</a> section for the full timeline.</li>
 						<li><b>10.06.2026:</b> Submission deadlines updated: paper submission is now <b>June 30, 2026</b>, with author notifications by <b>July 21</b>. See the <a href="#dates">Important Dates</a> section for the full timeline.</li>
@@ -223,10 +295,141 @@
 					</header>
 
 					<p>
-						The detailed Satellite Events session schedule is published in the official
+						The Satellite Events session schedule is published in the official
 						<a href="https://conferences.miccai.org/2026/files/downloads/MICCAI2026-Satellite-Events-Program.pdf">MICCAI 2026 Satellite Events program</a>.
-						Our slot is on Day 1 (Sunday, September 27) in Dome 4 at Etoile (U), 08:00–12:30. The detailed program will be updated here soon - stay tuned!
+						Our slot is on Day 1 (Sunday, September 27) in Dome 4 at Etoile (U), 08:00–12:30.
 					</p>
+
+					<h3>Workshop Agenda</h3>
+
+					<div class="table-wrapper">
+						<table class="program-agenda">
+							<thead>
+								<tr>
+									<th>Start</th>
+									<th>End</th>
+									<th>Speaker</th>
+									<th>Topic / Title</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="program-chair">
+									<td>8:00</td>
+									<td>8:10</td>
+									<td>GRAIL Program Chairs</td>
+									<td>Opening</td>
+								</tr>
+								<tr class="program-keynote">
+									<td>8:10</td>
+									<td>9:00</td>
+									<td>Emma Robinson</td>
+									<td>Keynote 1</td>
+								</tr>
+								<tr class="program-session">
+									<td>9:00</td>
+									<td>9:50</td>
+									<td>Oral session 1</td>
+									<td></td>
+								</tr>
+								<tr class="program-oral">
+									<td>9:00</td>
+									<td>9:10</td>
+									<td>Noga Kertes</td>
+									<td>GraphSVR: q-Space--Aware Graph-Based Slice-to-Volume Registration for Diffusion MRI</td>
+								</tr>
+								<tr class="program-oral">
+									<td>9:10</td>
+									<td>9:20</td>
+									<td>Gurur Gamgam</td>
+									<td>FBN-Bench: Do Graph-Based Deep Learning Models Improve Functional Brain Network Classification?</td>
+								</tr>
+								<tr class="program-oral">
+									<td>9:20</td>
+									<td>9:30</td>
+									<td>Tananun Songdechakraiwut</td>
+									<td>Imaging the Topology of Dynamic Brain Connectivity</td>
+								</tr>
+								<tr class="program-oral">
+									<td>9:30</td>
+									<td>9:40</td>
+									<td>Mayssa Soussia</td>
+									<td>MetaCBT: A Multi-Layer Connectional Brain Template for Reproducible Population-Level Biomarker Discovery</td>
+								</tr>
+								<tr class="program-oral">
+									<td>9:40</td>
+									<td>9:50</td>
+									<td>Kathleen M. Bartz</td>
+									<td>A Continuous Optimization Approach for Graph Cuts-based Phase Unwrapping</td>
+								</tr>
+								<tr class="program-chair">
+									<td>9:50</td>
+									<td>10:00</td>
+									<td>Seyed-Ahmad Ahmadi</td>
+									<td>NVIDIA sponsor talk</td>
+								</tr>
+								<tr class="program-framework">
+									<td>10:00</td>
+									<td>10:30</td>
+									<td>Break</td>
+									<td></td>
+								</tr>
+								<tr class="program-keynote">
+									<td>10:30</td>
+									<td>11:20</td>
+									<td>Azade Farshad</td>
+									<td>Keynote 2</td>
+								</tr>
+								<tr class="program-session">
+									<td>11:20</td>
+									<td>12:10</td>
+									<td>Oral session 2</td>
+									<td></td>
+								</tr>
+								<tr class="program-oral">
+									<td>11:20</td>
+									<td>11:30</td>
+									<td>Johannes Kiechle</td>
+									<td>Graph Representation Learning of Longitudinal Medical Imaging Trajectories for Treatment Response Prediction</td>
+								</tr>
+								<tr class="program-oral">
+									<td>11:30</td>
+									<td>11:40</td>
+									<td>Kiho Im</td>
+									<td>Diffusion-based Perturbation Modeling for Unsupervised Detection of Sulcal Pattern Alterations</td>
+								</tr>
+								<tr class="program-oral">
+									<td>11:40</td>
+									<td>11:50</td>
+									<td>Maria Rita Verdelho</td>
+									<td>TumorGraphs: Patient-Level Fusion of Multi-WSI Histopathology</td>
+								</tr>
+								<tr class="program-oral">
+									<td>11:50</td>
+									<td>12:00</td>
+									<td>Linus Kreitner</td>
+									<td>Temporally Consistent Graph Extraction and Matching for Longitudinal Angiographic Images</td>
+								</tr>
+								<tr class="program-oral">
+									<td>12:00</td>
+									<td>12:10</td>
+									<td>Maxime Sermesant</td>
+									<td>Topological Deep Learning on Graphs for Arrhythmia Risk Prediction From Images</td>
+								</tr>
+								<tr class="program-chair">
+									<td>12:10</td>
+									<td>12:20</td>
+									<td>Award and thanks</td>
+									<td>GRAIL Program Chairs</td>
+								</tr>
+								<tr class="program-framework">
+									<td>12:20</td>
+									<td>12:30</td>
+									<td>Buffer</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
 					<p>
 						GRAIL 2026 will be organized as a <b>half-day in-person workshop</b> at MICCAI 2026 and will feature:
@@ -283,18 +486,73 @@
 
 			<!-- Keynotes -->
 			<section id="keynote" class="main">
-				<div class="content">
-					<header class="major">
-						<h2>Keynote Speakers</h2>
-					</header>
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Keynote Speakers</h2>
+						</header>
+					</div>
+				</div>
 
-					<p>
-						The keynote speaker lineup for GRAIL 2026 is <b>tbd</b>.
-					</p>
+				<div class="spotlight">
+					<div class="content">
+						<h2>
+							<b><a href="https://www.kcl.ac.uk/people/emma-robinson">Dr Emma Robinson</a></b>
+							<br><i>King's College London</i>
+						</h2>
+						<h4>
+							<b>Keynote 1</b>
+						</h4>
 
-					<p>
-						We will announce invited speakers here as soon as confirmations are finalized.
-					</p>
+						<p>
+							Her talk will cover work in geometric deep learning and the current endeavor of establishing a new
+							Working Group for Project MONAI on geometric deep learning.
+						</p>
+
+						<p>
+							<b>Bio:</b> Dr Robinson's research focuses on the development of computational methods for brain imaging
+							and neuroscience, spanning classical as well as AI methods. Most notably, her software for cortical surface
+							registration (Multimodal Surface Matching, MSM) was central to the development of the Human Connectome
+							Project's (HCP)
+							<a href="https://www.nature.com/articles/nature18933">Multi-modal parcellation of the Human Cortex</a>
+							(Glasser et al., Nature 2016), and has featured as a central tenet in the
+							<a href="https://www.nature.com/articles/nn.4361">HCP's paradigm for neuroimage analysis</a>.
+							Her current research interests are focused on the development of geometric deep learning tools for
+							modelling functions on the cortical and cardiac surfaces, optimising image processing pipelines for open
+							data collections such as the HCP and UK Biobank, and building learning-based models of neurological
+							processes (neurological Digital Twins).
+						</p>
+					</div>
+					<span class="image"><img src="https://www.kcl.ac.uk/newimages/folsm/person-profile/bmeis/emma-robinson.x0e26b4c7.png?f=webp" alt="Dr Emma Robinson"></span>
+				</div>
+
+				<div class="spotlight">
+					<div class="content">
+						<h2>
+							<b><a href="https://scholar.google.com/citations?user=VKZtH1MAAAAJ&hl=en">Dr Azade Farshad</a></b>
+							<br><i>Aalto University</i>
+						</h2>
+						<h4>
+							<b>Keynote 2</b>
+						</h4>
+
+						<p>
+							Her talk will cover her research group's work on generative models using scene graphs for surgical
+							data science.
+						</p>
+
+						<p>
+							<b>Bio:</b> Dr Farshad is Assistant Professor at Aalto University and an ELLIS PI. Her research focuses on
+							scene graphs, generative models, and semantic scene understanding, with applications in surgical data
+							science. She has published influential work on scene-graph-based image generation and manipulation,
+							including
+							<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Dhamo_Semantic_Image_Manipulation_Using_Scene_Graphs_CVPR_2020_paper.html">semantic image manipulation using scene graphs</a>
+							(CVPR 2020) and meta image generation from scene graphs (BMVC 2021). She serves on the board of
+							<a href="https://www.wim-miccai.org/">Women in MICCAI</a> and has organized scene-graph workshops at CVPR
+							and ICCV.
+						</p>
+					</div>
+					<span class="image"><img src="https://acris.aalto.fi/ws/portalfiles/portal/198014007/azade_2.jpg" alt="Dr Azade Farshad"></span>
 				</div>
 			</section>
 
@@ -331,24 +589,26 @@
 					</header>
 
 					<p>
-						GRAIL 2026 submissions are handled through <b>OpenReview</b>. All co-authors must have OpenReview accounts with complete affiliation and conflict-of-interest information before submission.
+						<b>Paper submission for GRAIL 2026 is now closed.</b> Submissions were handled through
+						<b>OpenReview</b>; all co-authors were required to have OpenReview accounts with complete affiliation
+						and conflict-of-interest information. Accepted papers underwent double-blind peer review, and decisions
+						have been communicated to authors.
 					</p>
-					
-					<p>	
-						Please use the
+
+					<p>
+						For reference, submissions were made via the
 						<a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/GRAIL">MICCAI 2026 Workshop GRAIL</a>
-						group page to submit your paper.
-						After logging in, click <b>MICCAI 2026 Workshop GRAIL Submission</b> to start a new submission:
+						group page by selecting <b>MICCAI 2026 Workshop GRAIL Submission</b>:
 						<br>
 						<span class="image"><img src="./index_files/openreview-submission-button.png" alt="OpenReview Add button: MICCAI 2026 Workshop GRAIL Submission"></span>
 					</p>
 
-
 					<p>
-						We accept <b>complete papers</b> describing original research (MICCAI workshop length: max 8 pages text + max 2 pages references; supplemental material allowed). Submissions should be anonymous,
-						formatted following the
+						We accepted <b>complete papers</b> describing original research (MICCAI workshop length: max 8 pages text
+						+ max 2 pages references; supplemental material allowed). Submissions were anonymous, formatted following
+						the
 						<a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">LNCS Style</a>,
-						and will be peer-reviewed through a double-blind process.
+						and were peer-reviewed through a double-blind process.
 					</p>
 				</div>
 			</section>
@@ -467,6 +727,39 @@
 				</ul>
 			</section>
 
+			<section id="sponsors" class="main">
+				<div class="content">
+					<header class="major">
+						<h2>Sponsors &amp; Awards</h2>
+					</header>
+
+					<p>
+						We are grateful to our sponsors for supporting GRAIL 2026 and the best paper awards.
+						Prizes will be presented at the workshop to the <b>best paper</b> and <b>best paper runner-up</b>.
+					</p>
+
+					<ul>
+						<li>
+							<b><a href="https://mcml.ai/">Munich Center for Machine Learning (MCML)</a></b>:
+							€500 cash award
+						</li>
+						<li>
+							<b><a href="https://www.nvidia.com/en-us/solutions/ai/">NVIDIA</a></b>:
+							RTX 5070 GPU hardware award
+						</li>
+					</ul>
+
+					<div class="sponsor-logos">
+						<a href="https://mcml.ai/">
+							<img src="https://mcml.ai/images/MCML_Logo_cropped.jpg" alt="Munich Center for Machine Learning (MCML)">
+						</a>
+						<a href="https://www.nvidia.com/en-us/solutions/ai/">
+							<img class="sponsor-logo-nvidia" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8LFlZhqi7NPV8qvjMzWha3azAUisGGcmvQzKtczJyfgq-jDBjeEdiTfKI&s=10" alt="NVIDIA">
+						</a>
+					</div>
+				</div>
+			</section>
+
 			<!--
 			<section id="past_events" class="main">
 				<header class="major">
@@ -534,24 +827,6 @@
 			</section>
 			-->
 
-			<!--
-			<section id="sponsors" class="main">
-				<header class="major">
-					<h2>Sponsor</h2>
-					We are very grateful to our sponsor NVIDIA for their valuable support.
-					<div>
-						<center>
-							<span class="">
-								<a href="https://www.nvidia.com/en-us/solutions/ai/">
-									<img src="index_files/nvidia.png" alt="" width="40%">
-								</a>
-							</span>
-						</center>
-					</div>
-				</header>
-			</section>
-			-->
-
 		</div>
 
 		<!-- Footer -->
@@ -566,8 +841,9 @@
 
 			<section>
 				<p>
-					Submit via
-					<a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/GRAIL">OpenReview</a>.
+					Paper submission is closed. See
+					<a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/GRAIL">OpenReview</a>
+					for the GRAIL 2026 workshop group.
 				</p>
 			</section>
 
