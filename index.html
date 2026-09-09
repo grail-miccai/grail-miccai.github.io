@@ -74,6 +74,41 @@
 			max-height: 96px;
 			max-width: 120px;
 		}
+
+		@media screen and (max-width: 736px) {
+			#nav {
+				display: block !important;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				width: 100% !important;
+				max-width: 100% !important;
+				padding: 0.4em 0.5em;
+				z-index: 10000;
+				border-radius: 0;
+				background-color: rgba(247, 247, 247, 0.98);
+			}
+
+			#nav ul {
+				line-height: 1.2;
+			}
+
+			#nav ul li {
+				margin: 0.15em 0.1em;
+			}
+
+			#nav ul li a {
+				font-size: 0.72em;
+				padding: 0 0.55em;
+				height: 1.9em;
+				line-height: 1.9em;
+			}
+
+			#nav + #main {
+				padding-top: 4.75em !important;
+			}
+		}
 	</style>
 
 	<script>
@@ -394,7 +429,7 @@
 								<tr class="program-oral">
 									<td>11:30</td>
 									<td>11:40</td>
-									<td>Kiho Im</td>
+									<td>Hyeokjin Kwon</td>
 									<td>Diffusion-based Perturbation Modeling for Unsupervised Detection of Sulcal Pattern Alterations</td>
 								</tr>
 								<tr class="program-oral">
